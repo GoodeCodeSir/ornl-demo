@@ -1,12 +1,12 @@
 # Vue Frontend
-FROM node:24 as build-stage
+FROM node:24-alpine as build-stage
 WORKDIR /frontend
 COPY frontend/ .
 RUN npm install
 RUN npm run build
 
 # Python Backend
-FROM python:3.9
+FROM python:3.14-alpine
 WORKDIR /backend
 COPY backend/ .
 RUN pip install --no-cache-dir --upgrade -r requirements.txt
