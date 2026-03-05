@@ -12,7 +12,6 @@ const navLinks = [
   {to: '/', label: 'Home', icon: 'mdi-home-outline'},
   {to: '/about', label: 'About', icon: 'mdi-information-outline'},
   {to: '/charts', label: 'Charts', icon: 'mdi-chart-line'},
-  {to: '/auth/login', label: 'Sign In', icon: 'mdi-account-outline'},
 ]
 
 </script>
@@ -76,11 +75,7 @@ const navLinks = [
     <!-- Main Content -->
     <v-main>
       <v-container fluid class="pa-6">
-        <router-view v-slot="{ Component, route }">
-          <transition name="page" mode="out-in">
-            <component :is="Component" :key="route.path"/>
-          </transition>
-        </router-view>
+        <router-view />
       </v-container>
     </v-main>
   </v-app>
