@@ -62,6 +62,7 @@ function cancelForm() {
 }
 
 function confirmDelete(id: number) {
+  showForm.value = false
   selectedUserId.value = id
   showConfirmation.value = true
 }
@@ -110,7 +111,7 @@ function deleteUser() {
       <td>{{ user.name }}</td>
       <td>{{ user.email }}</td>
       <td>
-        <v-btn variant="flat" color="red" @click="confirmDelete(user.id)">
+        <v-btn variant="flat" color="red" @click.stop="confirmDelete(user.id)">
           <v-icon icon="mdi-trash-can-outline"/>
         </v-btn>
       </td>
