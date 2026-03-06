@@ -22,7 +22,7 @@ const navLinks = [
     <v-app-bar flat border="b" height="80">
       <v-app-bar-title>
         <router-link to="/" class="brand-link">
-          <img src="@/assets/img.png" alt="Logo" class="d-none d-md-block" ></img>
+          <img src="@/assets/img.png" alt="Logo" class="md-block" ></img>
         </router-link>
       </v-app-bar-title>
 
