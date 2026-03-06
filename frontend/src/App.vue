@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import {ref} from 'vue'
 
+
+// reactive items
 const drawer = ref(false)
 const theme = ref<'light' | 'dark'>('light')
 
@@ -11,7 +13,7 @@ const toggleTheme = () => {
 const navLinks = [
   {to: '/', label: 'Home', icon: 'mdi-home-outline'},
   {to: '/about', label: 'About', icon: 'mdi-information-outline'},
-  {to: '/charts', label: 'Charts', icon: 'mdi-chart-line'},
+  {to: '/users', label: 'users', icon: 'mdi-account-group'},
 ]
 
 </script>
@@ -19,10 +21,10 @@ const navLinks = [
 
 <template>
   <v-app :theme="theme">
-    <v-app-bar flat border="b" height="80">
+    <v-app-bar height="80">
       <v-app-bar-title>
         <router-link to="/" class="brand-link">
-          <img src="@/assets/img.png" alt="Logo" class="md-block" ></img>
+          <img src="@/assets/img.png" alt="Logo" class="md-block"></img>
         </router-link>
       </v-app-bar-title>
 
@@ -72,10 +74,9 @@ const navLinks = [
       </v-list>
     </v-navigation-drawer>
 
-    <!-- Main Content -->
     <v-main>
       <v-container fluid class="pa-6">
-        <router-view />
+        <router-view/>
       </v-container>
     </v-main>
   </v-app>
@@ -88,31 +89,9 @@ const navLinks = [
   color: inherit;
 }
 
-.brand-text {
-  font-size: 1.25rem;
-  font-weight: 700;
-  letter-spacing: 0.15em;
-}
-
 .nav-btn {
   font-size: 0.875rem;
   font-weight: 500;
   letter-spacing: 0.02em;
-}
-
-/* Page transition */
-.page-enter-active,
-.page-leave-active {
-  transition: opacity 0.2s ease, transform 0.2s ease;
-}
-
-.page-enter-from {
-  opacity: 0;
-  transform: translateY(6px);
-}
-
-.page-leave-to {
-  opacity: 0;
-  transform: translateY(-6px);
 }
 </style>
