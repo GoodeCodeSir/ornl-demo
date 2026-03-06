@@ -10,12 +10,12 @@ const experiences = [
   {
     icon: 'mdi-sitemap-outline',
     title: 'Full Lifecycle Delivery',
-    body: 'From stakeholder requirements through architecture, implementation, and long-term production support — comfortable owning the entire software lifecycle across consulting and product environments.',
+    body: 'From stakeholder requirements through architecture, implementation, and long-term production support comfortable owning the entire software lifecycle across consulting and product environments.',
   },
   {
     icon: 'mdi-vuejs',
-    title: 'Vue 2 → Vue 3 Migration',
-    body: 'Led a structured migration from Vue 2 to Vue 3 — refactoring legacy components, modernizing Pinia state management patterns, and upgrading Vuetify for long-term ecosystem alignment.',
+    title: 'Vue 2 to Vue 3 Migration',
+    body: 'Led a structured migration from Vue 2 to Vue 3 refactoring legacy components, modernizing Pinia state management patterns, and upgrading Vuetify for long-term ecosystem alignment.',
   },
   {
     icon: 'mdi-layers-outline',
@@ -28,8 +28,8 @@ const differentiators = [
   'Full-stack ownership from database schema to UI component',
   'Translates loose stakeholder descriptions into clear technical architecture',
   'Managed multiple concurrent projects with varying scopes and timelines',
-  'Drawn to software that matures through careful iteration — not short-term delivery cycles',
-  'Strong testing culture — unit, integration, and e2e as first-class concerns',
+  'Drawn to software that matures through careful iteration not short-term delivery cycles',
+  'Strong testing culture unit, integration, and e2e as first-class concerns',
   'Genuinely excited by nationally significant, long-term research infrastructure',
 ]
 </script>
@@ -63,7 +63,7 @@ const differentiators = [
         <p class="why-text">
           What especially appeals to me about this role is the opportunity to contribute to long-term, focused projects
           where systems are maintained, improved, and evolved over time. I enjoy building software that matures through
-          careful iteration rather than short-term delivery cycles — and the prospect of contributing to nationally
+          careful iteration rather than short-term delivery cycles and the prospect of contributing to nationally
           significant research infrastructure is genuinely exciting. I'm deeply motivated by learning, improving systems,
           and bringing structure and clarity to complex technical environments, which I believe aligns well with ORNL's
           research-driven culture.
