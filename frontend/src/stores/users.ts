@@ -7,7 +7,7 @@ export interface User {
     email: string
 }
 
-// composition API store
+// composition API store or the "setup store"
 export const useUserStore = defineStore('user', () => {
     const users = ref<User[]>([
         {id: 1, name: 'Chris', email: 'chris@example.com'},
